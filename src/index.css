@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  background-color: blueviolet;
+  color: #fff;
+  text-align: center;
+  padding: 12px 0;
+}
+
+main {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 48px;
+}
+
+/* Form */
+.form-container {
+  width: 500px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 8px;
+  font-size: 20px;
+  outline: none;
+}
+
+.form-container button {
+  font-size: 18px;
+  background-color: blueviolet;
+  color: #fff;
+  width: 100px;
+  height: 40px;
+  padding: 4px 12px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+}
+
+/* LIST */
+.todo-list {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.todo-list ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.list-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sort {
+  font-size: 16px;
+}
+
+.sort select {
+  width: 200px;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #333;
+  transition: border-color 0.3s ease;
+  outline: none;
+  cursor: pointer;
+}
+
+.sort select:hover {
+  border-color: #666;
+}
+
+.list-actions button {
+  background-color: rgb(255, 112, 112);
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.list-actions button:hover {
+  /* background: linear-gradient(to bottom right, #e63946, #c62832); */
+  /* background: radial-gradient(circle, #e63946, #c62832); */
+  background-color: #c62832;
+}
+
+input[type="checkbox"] {
+  /* appearance: none; */
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  outline: none;
+  cursor: pointer;
+  accent-color: blueviolet;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+.sort {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.item-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.completed .title {
+  text-decoration: line-through;
+}
+
+/* Update Modal Window */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  /* padding: 100px; */
+  width: 500px;
+  height: 250px;
+  z-index: 1000;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}
+
+/* Modal Form */
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 24px;
+  /* align-items: center; */
+}
+
+.modal-form input {
+  width: 350px;
+  padding: 8px;
+  font-size: 20px;
+  outline: none;
+  align-self: center;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.modal-actions button {
+  font-size: 18px;
+  color: #fff;
+  width: 100px;
+  height: 40px;
+  padding: 4px 12px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+}
+
+.update-btn {
+  background-color: blueviolet;
+}
+
+.cancel-btn {
+  background-color: rgb(255, 112, 112);
+}
