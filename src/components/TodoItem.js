@@ -1,11 +1,12 @@
-import { useState } from "react";
+// import { useState } from "react";
 
 const TodoItem = ({ task, deleteTask, updateStatus, openModal }) => {
-  const [isChecked, setIsChecked] = useState(task.completed);
+  // const [isChecked, setIsChecked] = useState(task.completed);
+  const isChecked = task.completed;
 
   const checkboxHanlder = () => {
     updateStatus(task.id);
-    setIsChecked((checked) => !checked);
+    // setIsChecked((checked) => !checked);
   };
 
   return (
