@@ -4,23 +4,7 @@ import TodoForm from "./components/TodoForm";
 import TodoList from "./components/TodoList";
 import UpdateModal from "./components/UpdateModal";
 
-const tasksData = [
-  {
-    id: 1001,
-    title: "Learn React",
-    completed: false,
-  },
-  {
-    id: 1002,
-    title: "Practice some project to concrete your knowledge.",
-    completed: true,
-  },
-  {
-    id: 1003,
-    title: "Complete preparation for Eid.",
-    completed: false,
-  },
-];
+const tasksData = [];
 
 const App = () => {
   const [tasks, setTasks] = useState(tasksData);
